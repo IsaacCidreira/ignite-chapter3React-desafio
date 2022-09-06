@@ -1,3 +1,15 @@
+import Link from 'next/link';
+import styles from './header.module.scss';
+
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types, @typescript-eslint/explicit-function-return-type
 export default function Header() {
-  // TODO
+  return (
+    <header className={styles.postHeader}>
+      <Link href="/">
+        <a>
+          <img src="/logo.svg" alt="logo" className={styles.logo} />
+        </a>
+      </Link>
+    </header>
+  );
 }
